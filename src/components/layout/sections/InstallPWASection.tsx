@@ -24,7 +24,7 @@ const InstallPWASection = () => {
   const installHandler = async () => {
     prompt.prompt();
     await prompt.userChoice;
-    set_can_install(true);
+    set_can_install(false);
     set_prompt(undefined);
   };
 
