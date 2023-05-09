@@ -13,7 +13,7 @@ const InstallPWASection = () => {
     if (typeof window !== "undefined") {
       window.addEventListener("beforeinstallprompt", (e) => {
         // Prevent the mini-infobar from appearing on mobile
-        e.preventDefault();
+        // e.preventDefault();
         // Stash the event so it can be triggered later.
         set_can_install(true);
         set_prompt(e);
@@ -24,7 +24,7 @@ const InstallPWASection = () => {
   const installHandler = async () => {
     prompt.prompt();
     await prompt.userChoice;
-    set_can_install(true);
+    set_can_install(false);
     set_prompt(undefined);
   };
 

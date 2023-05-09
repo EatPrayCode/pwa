@@ -13,7 +13,7 @@ const nextConfig = {
   swcMinify: true,
   i18n: {
     locales: ["en", "fr", "ar"],
-    defaultLocale: "fr",
+    defaultLocale: "en",
   },
   env: {
     ROOT: __dirname,
